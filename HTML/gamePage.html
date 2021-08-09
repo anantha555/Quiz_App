@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - PLAY</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/gamePage.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id='answer'></div>
+
+        <div class="main">
+            <div class="header">
+                <div id='scoreboard'>
+                    <p>Current Score: 0 || Correct: 0 || Incorrect: 0</p>
+                </div>
+            </div>
+            <span class="line"></span>
+            <div class="play hide">
+                <div class="question_area">
+                    <h1 id='question'>What is the answer?</h1>
+                </div>
+                <div class="choice_area">
+                    <div class="choice_item">
+                        <div class="choice-name">A</div>
+                        <div class='choice-text'>Choice A</div>
+                    </div>
+                    <div class="choice_item">
+                        <div class="choice-name">B</div>
+                        <div class='choice-text'>Choice B</div>
+                    </div>
+                    <div class="choice_item">
+                        <div class="choice-name">C</div>
+                        <div class='choice-text'>Choice C</div>
+                    </div>
+                    <div class="choice_item">
+                        <div class="choice-name">D</div>
+                        <div class='choice-text'>Choice D</div>
+                    </div>
+                </div>
+            </div>
+            <span class="line"></span>
+            <div class="footer">
+                <div id="progressBar">
+                    <div id="progressBarFull">
+                        <div id='progress' class="progress">
+                            <p>0/10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/game.js"></script>
+</body>
+
+</html>

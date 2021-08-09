@@ -1,0 +1,194 @@
+body {
+    background-color: #eef2f3;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.rank-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.btn-rank {
+    position: absolute;
+    right: 0
+}
+
+.rank-title {
+    width: 100%;
+    background-color: cornsilk;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.winners {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.second,
+.first,
+.third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.second,
+.third {
+    margin-top: 50px;
+}
+
+.top-card {
+    background-color: cornsilk;
+    border-radius: 10px;
+    position: relative;
+    width: 20%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.5s;
+}
+
+.badge {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(229, 255, 0);
+    height: 10px;
+    width: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.one {
+    background-color: gold;
+}
+
+.two {
+    background-color: silver;
+}
+
+.three {
+    background-color: burlywood;
+}
+
+.top-name {
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.top-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #6565d14d;
+    height: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.bottom {
+    margin: 10px auto;
+    width: 70%;
+}
+
+.bottom-card {
+    background-color: cornsilk;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    grid-auto-rows: 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    grid-template-areas: "rank-nbr1 name1 score1";
+    transition: transform 0.5s;
+}
+
+.rank-nbr {
+    grid-area: rank-nbr1;
+}
+
+.name {
+    grid-area: name1;
+}
+
+.score {
+    grid-area: score1;
+}
+
+.rank-nbr {
+    background-color: rgb(140 140 205);
+    background-color: rgb(101, 101, 209);
+    height: 10px;
+    width: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #6565d14d;
+    height: 10px;
+    padding: 15px 0px;
+    border-radius: 10px;
+}
+
+.top-card:hover {
+    transform: scale(1.1);
+}
+
+.bottom-card:hover {
+    transform: scale(1.02);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Quiz App - Game Over</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="home" class="home">
+            <div class="flex-centre">
+                <h1>Game Over!</h1>
+                <span class="line"></span>
+                <div class="final-result">
+                    <div id='finalStatus'> Your score</div>
+                    <br>
+                    <div><span id='finalScore'>0</span>points</div>
+                </div>
+                <br>
+                <form>
+                    <input type="text" name="username" id="username" placeholder="Enter Username" />
+                    <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
+                      Save Score
+                    </button>
+                </form>
+            </div>
+            <span class="line"></span>
+            <div>
+                <a class="btn" href="gamePage.html">Play Again</a>
+                <a class="btn" href="rankingPage.html">Check Rank</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/endPage.js"></script>
+</body>
+
+</html>
